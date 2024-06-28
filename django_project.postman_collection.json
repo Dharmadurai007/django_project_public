@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "c7f2aac7-7e93-4ca7-8123-4dcb15c2031e",
+		"name": "django_project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26794775"
+	},
+	"item": [
+		{
+			"name": "create_account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"dharma@gmail.com\",\r\n    \"account_name\": \"Dharma\",\r\n    \"website\": \"http://dharma.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/accounts/"
+			},
+			"response": []
+		},
+		{
+			"name": "read_accounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/accounts/"
+			},
+			"response": []
+		},
+		{
+			"name": "update_account",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"dharma831@gmail.com\",\r\n    \"account_name\": \"Dharma\",\r\n    \"website\": \"http://dharma.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/accounts/2/"
+			},
+			"response": []
+		},
+		{
+			"name": "delete_account",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/accounts/3/"
+			},
+			"response": []
+		},
+		{
+			"name": "create_destination",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"account\": 3,  \r\n    \"url\": \"http://destination.com\",\r\n    \"http_method\": \"POST\",\r\n    \"headers\": {\r\n        \"APP_ID\": \"1234APPID1234\",\r\n        \"APP_SECTET\": \"enwdj3bshwer43bjhjs9ereuinkjcnsiurew8s\",\r\n        \"ACTION\": \"user.update\",\r\n        \"Content-Type\": \"application/json\",\r\n        \"Accept\": \"*\"\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/destinations/"
+			},
+			"response": []
+		},
+		{
+			"name": "read_destinations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/destinations/"
+			},
+			"response": []
+		},
+		{
+			"name": "update_destination",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"account\": 3,  \r\n    \"url\": \"http://google-destination.com\",\r\n    \"http_method\": \"POST\",\r\n    \"headers\": {\r\n        \"APP_ID\": \"1234APPID1234\",\r\n        \"APP_SECTET\": \"enwdj3bshwer43bjhjs9ereuinkjcnsiurew8s\",\r\n        \"ACTION\": \"user.update\",\r\n        \"Content-Type\": \"application/json\",\r\n        \"Accept\": \"*\"\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/destinations/2/"
+			},
+			"response": []
+		},
+		{
+			"name": "read_destination_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/destinations/2/"
+			},
+			"response": []
+		},
+		{
+			"name": "read_account_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/accounts/1"
+			},
+			"response": []
+		},
+		{
+			"name": "delete_destination",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/destinations/3/"
+			},
+			"response": []
+		}
+	]
+}
